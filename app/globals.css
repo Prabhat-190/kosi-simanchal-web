@@ -1,49 +1,202 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* ==========================================================================
+   CORE STYLING & BASE
+   ========================================================================== */
+   body {
+    font-family: 'Roboto', sans-serif;
+    color: #334155;
+    background-color: #f8fafc;
+    overflow-x: hidden;
   }
-}
-
-html {
-  height: 100%;
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+  
+  .oswald { font-family: 'Oswald', sans-serif; }
+  .roboto { font-family: 'Roboto', sans-serif; }
+  .text-main { color: #ffb300 !important; }
+  .bg-dark { background-color: #0f172a !important; }
+  .bg-soft-primary { background-color: #fffbeb !important; }
+  .bg-light { background-color: #ffffff !important; }
+  .wrapper { padding: 5rem 0; }
+  
+  /* Component Formats */
+  .card-border-bottom { 
+    border: none;
+    border-bottom: 4px solid #ffb300; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
   }
-}
+  .card-border-bottom:hover { 
+    transform: translateY(-8px); 
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+  }
+  .btn-circle {
+    width: 60px;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #fffbeb;
+  }
+  
+  /* Statistics Formatting */
+  .counter-wrapper { 
+    padding: 2rem 1rem; 
+    border-radius: 8px; 
+    background: rgba(255,255,255,0.05); 
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: background 0.3s;
+  }
+  .counter-wrapper:hover {
+    background: rgba(255,255,255,0.1); 
+  }
+  
+  /* Image formatting */
+  figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+  
+  /* Standard Navbar & Footer */
+  .navbar { 
+    background-color: #ffffff; 
+    border-bottom: 3px solid #ffb300; 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05); 
+  }
+  footer { 
+    border-top: 4px solid #ffb300; 
+  }
+  
+  /* ==========================================================================
+     ADVANCED UI UPGRADES (GLASS, GRADIENTS, PREMIUM BUTTONS)
+     ========================================================================== */
+  
+  /* 1. Frosted Glass Navbar */
+  .glass-nav {
+    background: rgba(255, 255, 255, 0.85) !important;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* 2. Premium Gradient Text */
+  .text-gradient-gold {
+    background: linear-gradient(135deg, #FFD700 0%, #F5A623 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none; 
+  }
+  
+  /* 3. High-End Floating Buttons */
+  .btn-premium {
+    border-radius: 50px !important;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 0.85rem !important;
+    padding: 1.2rem 3rem !important;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+  }
+  .btn-premium-gold {
+    background: linear-gradient(135deg, #ffb300, #e6a100) !important;
+    color: #0f172a !important;
+    border: none !important;
+    box-shadow: 0 10px 25px rgba(255, 179, 0, 0.4) !important;
+  }
+  .btn-premium-gold:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(255, 179, 0, 0.6) !important;
+  }
+  .btn-premium-glass {
+    background: rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(10px);
+    color: #ffffff !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  }
+  .btn-premium-glass:hover {
+    background: rgba(255, 255, 255, 0.2) !important;
+    transform: translateY(-4px);
+  }
+  
+  /* 4. Glass Cards */
+  .glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+  }
+  
+  /* ==========================================================================
+     ANIMATED KEN BURNS HERO SLIDER
+     ========================================================================== */
+  .hero-slider {
+    height: 90vh;
+    min-height: 600px;
+    overflow: hidden;
+    position: relative;
+    background-color: #0f172a;
+  }
+  .carousel-inner, .carousel-item {
+    height: 100%;
+  }
+  .animated-bg-img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    animation: kenburns 25s infinite alternate linear;
+    filter: brightness(0.4) contrast(1.2);
+  }
+  @keyframes kenburns {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.15); }
+  }
+  .carousel-caption {
+    bottom: 50%;
+    transform: translateY(50%);
+    z-index: 10;
+  }
+  
+  /* Static Hero Fallback (Just in case you use it elsewhere) */
+  .hero { position: relative; display: flex; }
+  .hero .overlay { position: absolute; inset: 0; background: rgba(15, 23, 42, 0.75); z-index: 1; }
+  .hero .container { position: relative; z-index: 2; }
+  
+  
+  /* ==========================================================================
+     INTERACTIVE ANIMATIONS & PAGE SLIDE TRANSITIONS
+     ========================================================================== */
+  .page-slide-enter {
+    animation: slidePageIn 0.8s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+    opacity: 0;
+  }
+  @keyframes slidePageIn {
+    0% { opacity: 0; transform: translateX(60px); }
+    100% { opacity: 1; transform: translateX(0); }
+  }
+  
+  .animate-float {
+    animation: floatEffect 3s ease-in-out infinite;
+  }
+  @keyframes floatEffect {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-12px); }
+    100% { transform: translateY(0px); }
+  }
+  
+  .animate-pulse {
+    animation: pulseGlow 2s infinite;
+    box-shadow: 0 0 0 0 rgba(255, 179, 0, 0.7);
+  }
+  @keyframes pulseGlow {
+    0% { box-shadow: 0 0 0 0 rgba(255, 179, 0, 0.7); }
+    70% { box-shadow: 0 0 0 15px rgba(255, 179, 0, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(255, 179, 0, 0); }
+  }
+  
+  .section-slide-up {
+    animation: slideUp 0.8s ease-out forwards;
+    opacity: 0;
+  }
+  @keyframes slideUp {
+    0% { opacity: 0; transform: translateY(40px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }

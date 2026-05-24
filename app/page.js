@@ -1,66 +1,53 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import React from 'react';
+import Navbar from '../components/Navbar';
+import Hero from '../components/Hero';
+import About from '../components/About';
+import Services from '../components/Services'; 
+import CompanyStats from '../components/CompanyStats'; 
+import RailwayProjects from '../components/RailwayProjects'; // <-- NEW RAILWAY IMPORT
+import ExportImport from '../components/ExportImport';
+import TradeConsultation from '../components/TradeConsultation'; 
+import MasterData from '../components/MasterData';
+import ClientPortal from '../components/ClientPortal';   
+import OrderTracking from '../components/OrderTracking'; 
+import Careers from '../components/Careers';             
+import PaymentContact from '../components/PaymentContact';
+import Footer from '../components/Footer';
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.js file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+    <main className="content-wrapper overflow-hidden">
+      
+      <Navbar />
+      <Hero />
+      
+      <section className="wrapper bg-light" data-cues="fadeIn" data-duration="800">
+        <About />
+      </section>
+
+      <CompanyStats />
+      
+      {/* <-- NEW RAILWAY SECTION ADDED HERE --> */}
+      <RailwayProjects /> 
+      
+      <Services />
+      
+      <ExportImport />
+      <TradeConsultation />  
+
+      <section className="wrapper bg-white" data-cue="slideInUp">
+        <MasterData />
+      </section>
+
+      <ClientPortal />
+      <OrderTracking />
+      <Careers />
+
+      <section className="wrapper bg-soft-primary" data-cues="zoomIn" data-duration="600">
+        <PaymentContact />
+      </section>
+
+      <Footer />
+    </main>
   );
 }
