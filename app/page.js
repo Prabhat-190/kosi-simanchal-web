@@ -4,7 +4,7 @@ import Hero from '../components/Hero';
 import About from '../components/About';
 import Services from '../components/Services'; 
 import CompanyStats from '../components/CompanyStats'; 
-import RailwayProjects from '../components/RailwayProjects'; // <-- NEW RAILWAY IMPORT
+import RailwayProjects from '../components/RailwayProjects'; 
 import ExportImport from '../components/ExportImport';
 import TradeConsultation from '../components/TradeConsultation'; 
 import MasterData from '../components/MasterData';
@@ -27,12 +27,14 @@ export default function Home() {
 
       <CompanyStats />
       
-      {/* <-- NEW RAILWAY SECTION ADDED HERE --> */}
+      {/* Enterprise Railway Division */}
       <RailwayProjects /> 
       
       <Services />
       
       <ExportImport />
+      
+      {/* Secure Backend Connected Form */}
       <TradeConsultation />  
 
       <section className="wrapper bg-white" data-cue="slideInUp">
