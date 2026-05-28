@@ -1,20 +1,19 @@
 "use client";
 import React from 'react';
-import Image from 'next/image'; // Pura optimized Image component
+import Image from 'next/image'; 
 import Link from 'next/link';
 
 export default function HeroSlider() {
   return (
     <div style={{ position: 'relative', backgroundColor: '#0f172a', minHeight: '85vh', display: 'flex', alignItems: 'center' }}>
       
-      {/* LAYER 1: The Image - Using Next.js Image with "priority" forces it to load instantly, killing the blank flash. */}
-      {/* Ensure '/img/banner/11.jpg' exists and its name is strictly lowercase in VS Code */}
+      {/* LAYER 1: The Image - Path updated to root /hero.jpg for bulletproof Vercel deployment */}
       <Image 
-        src="/img/banner/11.jpg" 
+        src="/hero.jpg" 
         alt="Kosi Simanchal Manufacturing & Construction" 
         fill
         priority 
-        quality={95} // High quality, but optimized by Next.js
+        quality={95} 
         style={{ objectFit: 'cover', zIndex: 0 }}
       />
       
