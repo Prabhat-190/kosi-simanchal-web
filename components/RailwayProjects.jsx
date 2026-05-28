@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import Image from 'next/image'; // Next.js image component optimize karne ke liye
+import Image from 'next/image'; 
 
 export default function RailwayProjects() {
   return (
@@ -39,12 +39,12 @@ export default function RailwayProjects() {
                 e.currentTarget.style.boxShadow = '0 4px 20px rgba(0,0,0,0.05)';
               }}
             >
-              {/* Image Container with relative layout for Next.js Image fill */}
               <div style={{ height: '260px', width: '100%', overflow: 'hidden', position: 'relative' }}>
                 <Image 
-                  src="/img/projects/bridge.jpeg" // Strictly lowercase 'b' to match Linux environment
+                  src="/img/projects/bridge.jpeg" // ⚠️ Make sure this exactly matches your filename case!
                   alt="Bridge Construction" 
                   fill
+                  unoptimized={true} // 👉 BYPASSING VERCEL OPTIMIZATION FOR INSTANT LOAD
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   style={{ objectFit: 'cover', filter: 'contrast(1.05) saturate(1.1)' }} 
                 />
@@ -81,6 +81,7 @@ export default function RailwayProjects() {
                   src="/img/projects/track.jpeg" 
                   alt="Track Construction" 
                   fill
+                  unoptimized={true} // 👉 BYPASSING VERCEL OPTIMIZATION
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   style={{ objectFit: 'cover', filter: 'contrast(1.05) saturate(1.1)' }} 
                 />
@@ -117,6 +118,7 @@ export default function RailwayProjects() {
                   src="/img/projects/fountain.jpeg" 
                   alt="Forecourt Fountain" 
                   fill
+                  unoptimized={true} // 👉 BYPASSING VERCEL OPTIMIZATION
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   style={{ objectFit: 'cover', filter: 'contrast(1.05) saturate(1.1)' }} 
                 />
