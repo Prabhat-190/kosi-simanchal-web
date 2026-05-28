@@ -7,13 +7,14 @@ export default function HeroSlider() {
   return (
     <div style={{ position: 'relative', backgroundColor: '#0f172a', minHeight: '85vh', display: 'flex', alignItems: 'center' }}>
       
-      {/* LAYER 1: The Image - Path updated to root /hero.jpg for bulletproof Vercel deployment */}
+      {/* LAYER 1: The Image - Optimized for O(1) perceived load time */}
       <Image 
         src="/hero.jpg" 
         alt="Kosi Simanchal Manufacturing & Construction" 
         fill
         priority 
-        quality={95} 
+        quality={70} 
+        sizes="100vw"
         style={{ objectFit: 'cover', zIndex: 0 }}
       />
       
