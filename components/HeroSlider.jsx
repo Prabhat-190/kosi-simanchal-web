@@ -1,21 +1,23 @@
 "use client";
 import React from 'react';
-import Image from 'next/image'; 
 import Link from 'next/link';
 
 export default function HeroSlider() {
   return (
-    <div style={{ position: 'relative', backgroundColor: '#0f172a', minHeight: '85vh', display: 'flex', alignItems: 'center' }}>
-      
-      {/* LAYER 1: Pointing to the REAL file path and bypassing Vercel optimization for instant load */}
-      <Image 
-        src="/img/banner/11.jpg" 
-        alt="Kosi Simanchal Manufacturing & Construction" 
-        fill
-        priority 
-        unoptimized={true}
-        style={{ objectFit: 'cover', zIndex: 0 }}
-      />
+    <div 
+      style={{ 
+        position: 'relative', 
+        backgroundColor: '#0f172a', 
+        minHeight: '85vh', 
+        display: 'flex', 
+        alignItems: 'center',
+        /* 100% STABLE DIRECT FETCH: Bypasses Vercel's slow Next.js image processing */
+        backgroundImage: "url('/mainbg.jpg')",
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
       
       {/* LAYER 2: The Dark Gradient Overlay */}
       <div 
