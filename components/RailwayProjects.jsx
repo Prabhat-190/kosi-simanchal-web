@@ -1,7 +1,6 @@
 "use client";
 
 import React from 'react';
-import Image from 'next/image'; 
 
 export default function RailwayProjects() {
   return (
@@ -19,7 +18,7 @@ export default function RailwayProjects() {
         {/* 3-Card Premium Grid */}
         <div className="row g-4 justify-content-center">
           
-          {/* Card 1: Bridge Construction */}
+          {/* Card 1: Bridge Construction - BULLETPROOF FIX */}
           <div className="col-md-6 col-lg-4">
             <div 
               className="card border-0 h-100" 
@@ -39,14 +38,12 @@ export default function RailwayProjects() {
                 e.currentTarget.style.boxShadow = '0 4px 20px rgba(0,0,0,0.05)';
               }}
             >
-              <div style={{ height: '260px', width: '100%', overflow: 'hidden', position: 'relative' }}>
-                <Image 
-                  src="/img/projects/bridge.jpeg" // ⚠️ Make sure this exactly matches your filename case!
+              <div style={{ height: '260px', width: '100%', overflow: 'hidden' }}>
+                {/* Replaced Next.js Image with standard HTML img pointing to root folder */}
+                <img 
+                  src="/gaya-bridge.jpg" 
                   alt="Bridge Construction" 
-                  fill
-                  unoptimized={true} // 👉 BYPASSING VERCEL OPTIMIZATION FOR INSTANT LOAD
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  style={{ objectFit: 'cover', filter: 'contrast(1.05) saturate(1.1)' }} 
+                  style={{ width: '100%', height: '100%', objectFit: 'cover', filter: 'contrast(1.05) saturate(1.1)' }} 
                 />
               </div>
               <div className="card-body text-center p-4">
@@ -56,7 +53,7 @@ export default function RailwayProjects() {
             </div>
           </div>
 
-          {/* Card 2: Track Construction */}
+          {/* Card 2: Track Construction - BULLETPROOF FIX */}
           <div className="col-md-6 col-lg-4">
             <div 
               className="card border-0 h-100" 
@@ -76,14 +73,11 @@ export default function RailwayProjects() {
                 e.currentTarget.style.boxShadow = '0 4px 20px rgba(0,0,0,0.05)';
               }}
             >
-              <div style={{ height: '260px', width: '100%', overflow: 'hidden', position: 'relative' }}>
-                <Image 
+              <div style={{ height: '260px', width: '100%', overflow: 'hidden' }}>
+                <img 
                   src="/img/projects/track.jpeg" 
                   alt="Track Construction" 
-                  fill
-                  unoptimized={true} // 👉 BYPASSING VERCEL OPTIMIZATION
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  style={{ objectFit: 'cover', filter: 'contrast(1.05) saturate(1.1)' }} 
+                  style={{ width: '100%', height: '100%', objectFit: 'cover', filter: 'contrast(1.05) saturate(1.1)' }} 
                 />
               </div>
               <div className="card-body text-center p-4">
@@ -93,7 +87,7 @@ export default function RailwayProjects() {
             </div>
           </div>
 
-          {/* Card 3: Forecourt Fountain */}
+          {/* Card 3: Forecourt Fountain - BULLETPROOF FIX */}
           <div className="col-md-6 col-lg-4">
             <div 
               className="card border-0 h-100" 
@@ -113,14 +107,11 @@ export default function RailwayProjects() {
                 e.currentTarget.style.boxShadow = '0 4px 20px rgba(0,0,0,0.05)';
               }}
             >
-              <div style={{ height: '260px', width: '100%', overflow: 'hidden', position: 'relative' }}>
-                <Image 
+              <div style={{ height: '260px', width: '100%', overflow: 'hidden' }}>
+                <img 
                   src="/img/projects/fountain.jpeg" 
                   alt="Forecourt Fountain" 
-                  fill
-                  unoptimized={true} // 👉 BYPASSING VERCEL OPTIMIZATION
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  style={{ objectFit: 'cover', filter: 'contrast(1.05) saturate(1.1)' }} 
+                  style={{ width: '100%', height: '100%', objectFit: 'cover', filter: 'contrast(1.05) saturate(1.1)' }} 
                 />
               </div>
               <div className="card-body text-center p-4">
