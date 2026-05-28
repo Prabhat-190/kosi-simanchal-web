@@ -7,7 +7,6 @@ export default function RailwayProjects() {
     <section className="wrapper bg-light" id="railway-division" style={{ padding: '6rem 0' }}>
       <div className="container">
         
-        {/* Section Header */}
         <div className="row text-center mb-10">
           <div className="col-lg-8 offset-lg-2">
             <h2 className="fs-16 text-uppercase mb-3" style={{ color: '#ffb300', fontWeight: '700', letterSpacing: '2px' }}>Railway Division</h2>
@@ -15,10 +14,9 @@ export default function RailwayProjects() {
           </div>
         </div>
 
-        {/* 3-Card Premium Grid */}
         <div className="row g-4 justify-content-center">
           
-          {/* Card 1: Bridge Construction - BULLETPROOF FIX */}
+          {/* Card 1: Bridge Construction - Seedha 2.jpg jo img/projects me hai */}
           <div className="col-md-6 col-lg-4">
             <div 
               className="card border-0 h-100" 
@@ -39,9 +37,8 @@ export default function RailwayProjects() {
               }}
             >
               <div style={{ height: '260px', width: '100%', overflow: 'hidden' }}>
-                {/* Replaced Next.js Image with standard HTML img pointing to root folder */}
                 <img 
-                  src="/gaya-bridge.jpg" 
+                  src="/img/projects/2.jpg" 
                   alt="Bridge Construction" 
                   style={{ width: '100%', height: '100%', objectFit: 'cover', filter: 'contrast(1.05) saturate(1.1)' }} 
                 />
@@ -53,7 +50,7 @@ export default function RailwayProjects() {
             </div>
           </div>
 
-          {/* Card 2: Track Construction - BULLETPROOF FIX */}
+          {/* Card 2: Track Construction */}
           <div className="col-md-6 col-lg-4">
             <div 
               className="card border-0 h-100" 
@@ -87,7 +84,7 @@ export default function RailwayProjects() {
             </div>
           </div>
 
-          {/* Card 3: Forecourt Fountain - BULLETPROOF FIX */}
+          {/* Card 3: Forecourt Fountain */}
           <div className="col-md-6 col-lg-4">
             <div 
               className="card border-0 h-100" 
