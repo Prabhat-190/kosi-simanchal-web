@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
-import Hero from '../components/Hero';
+import HeroSlider from '../components/HeroSlider'; // 👈 WE CHANGED THIS IMPORT
 import About from '../components/About';
 import Services from '../components/Services'; 
 import CompanyStats from '../components/CompanyStats'; 
@@ -19,7 +19,9 @@ export default function Home() {
     <main className="content-wrapper overflow-hidden">
       
       <Navbar />
-      <Hero />
+      
+      {/* 👈 WE ARE NOW USING THE FAST, FIXED SLIDER HERE */}
+      <HeroSlider /> 
       
       <section className="wrapper bg-light" data-cues="fadeIn" data-duration="800">
         <About />
