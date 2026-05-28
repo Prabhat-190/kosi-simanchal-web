@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+import Image from 'next/image'; // Next.js image component optimize karne ke liye
 
 export default function RailwayProjects() {
   return (
@@ -18,7 +19,7 @@ export default function RailwayProjects() {
         {/* 3-Card Premium Grid */}
         <div className="row g-4 justify-content-center">
           
-          {/* Card 1: Your Bridge Image */}
+          {/* Card 1: Bridge Construction */}
           <div className="col-md-6 col-lg-4">
             <div 
               className="card border-0 h-100" 
@@ -38,11 +39,14 @@ export default function RailwayProjects() {
                 e.currentTarget.style.boxShadow = '0 4px 20px rgba(0,0,0,0.05)';
               }}
             >
-              <div style={{ height: '260px', width: '100%', overflow: 'hidden' }}>
-                <img 
-                  src="/img/projects/Bridge.jpeg" 
+              {/* Image Container with relative layout for Next.js Image fill */}
+              <div style={{ height: '260px', width: '100%', overflow: 'hidden', position: 'relative' }}>
+                <Image 
+                  src="/img/projects/bridge.jpeg" // Strictly lowercase 'b' to match Linux environment
                   alt="Bridge Construction" 
-                  style={{ width: '100%', height: '100%', objectFit: 'cover', filter: 'contrast(1.05) saturate(1.1)' }} 
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  style={{ objectFit: 'cover', filter: 'contrast(1.05) saturate(1.1)' }} 
                 />
               </div>
               <div className="card-body text-center p-4">
@@ -52,7 +56,7 @@ export default function RailwayProjects() {
             </div>
           </div>
 
-          {/* Card 2: Your Track Image */}
+          {/* Card 2: Track Construction */}
           <div className="col-md-6 col-lg-4">
             <div 
               className="card border-0 h-100" 
@@ -72,11 +76,13 @@ export default function RailwayProjects() {
                 e.currentTarget.style.boxShadow = '0 4px 20px rgba(0,0,0,0.05)';
               }}
             >
-              <div style={{ height: '260px', width: '100%', overflow: 'hidden' }}>
-                <img 
+              <div style={{ height: '260px', width: '100%', overflow: 'hidden', position: 'relative' }}>
+                <Image 
                   src="/img/projects/track.jpeg" 
                   alt="Track Construction" 
-                  style={{ width: '100%', height: '100%', objectFit: 'cover', filter: 'contrast(1.05) saturate(1.1)' }} 
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  style={{ objectFit: 'cover', filter: 'contrast(1.05) saturate(1.1)' }} 
                 />
               </div>
               <div className="card-body text-center p-4">
@@ -86,7 +92,7 @@ export default function RailwayProjects() {
             </div>
           </div>
 
-          {/* Card 3: Your Fountain Image */}
+          {/* Card 3: Forecourt Fountain */}
           <div className="col-md-6 col-lg-4">
             <div 
               className="card border-0 h-100" 
@@ -106,11 +112,13 @@ export default function RailwayProjects() {
                 e.currentTarget.style.boxShadow = '0 4px 20px rgba(0,0,0,0.05)';
               }}
             >
-              <div style={{ height: '260px', width: '100%', overflow: 'hidden' }}>
-                <img 
+              <div style={{ height: '260px', width: '100%', overflow: 'hidden', position: 'relative' }}>
+                <Image 
                   src="/img/projects/fountain.jpeg" 
                   alt="Forecourt Fountain" 
-                  style={{ width: '100%', height: '100%', objectFit: 'cover', filter: 'contrast(1.05) saturate(1.1)' }} 
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  style={{ objectFit: 'cover', filter: 'contrast(1.05) saturate(1.1)' }} 
                 />
               </div>
               <div className="card-body text-center p-4">
