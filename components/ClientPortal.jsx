@@ -176,7 +176,7 @@ export default function ClientPortal() {
 
                   {/* Common Fields for Both Login & Register */}
                   <div className="form-floating mb-4 position-relative">
-                    <input type="email" className="form-control bg-transparent text-white border-0 border-bottom rounded-0 px-0" id="email" placeholder="name@company.com" style={{ borderColor: 'rgba(255,255,255,0.2)', boxShadow: 'none' }} />
+                    <input type="email" className="form-control bg-transparent text-white border-0 border-bottom rounded-0 px-0" id="email" placeholder="name@kosisimanchal.com" style={{ borderColor: 'rgba(255,255,255,0.2)', boxShadow: 'none' }} />
                     <label htmlFor="email" className="text-light opacity-50 px-0"><i className="fas fa-envelope me-2"></i> Corporate Email</label>
                   </div>
                   

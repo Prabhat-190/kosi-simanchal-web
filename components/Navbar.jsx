@@ -32,9 +32,9 @@ const Navbar = () => {
           <div className="d-flex align-items-center">
             
             <div className="shadow-sm" style={{ width: '65px', height: '65px', borderRadius: '8px', overflow: 'hidden', border: '2px solid #ffb300' }}>
-              {/* WARNING: This link will expire in 24 hours! */}
+              {/* Permanent Local Image Link */}
               <img 
-                src="https://prod-drive-download.titan.email/40356033751552/100?response-content-disposition=inline%3B+filename%3D%22WhatsApp+Image+2026-05-14+at+08.56.34.jpeg%22&response-content-type=image%2Fjpeg&response-cache-control=public%2C+max-age%3D86400%2C+immutable&response-content-encoding=gzip&Policy=eyJTdGF0ZW1lbnQiOiBbeyJSZXNvdXJjZSI6Imh0dHBzOi8vcHJvZC1kcml2ZS1kb3dubG9hZC50aXRhbi5lbWFpbC80MDM1NjAzMzc1MTU1Mi8xMDA~cmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmUlM0IrZmlsZW5hbWUlM0QlMjJXaGF0c0FwcCtJbWFnZSsyMDI2LTA1LTE0K2F0KzA4LjU2LjM0LmpwZWclMjImcmVzcG9uc2UtY29udGVudC10eXBlPWltYWdlJTJGanBlZyZyZXNwb25zZS1jYWNoZS1jb250cm9sPXB1YmxpYyUyQyttYXgtYWdlJTNEODY0MDAlMkMraW1tdXRhYmxlJnJlc3BvbnNlLWNvbnRlbnQtZW5jb2Rpbmc9Z3ppcCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc3OTYwMjk1N319fV19&Signature=RRTfFAQiNLDa2ysIKhpiZ0Tty~HEgk1F~w1Ru9VxqzBAeEXRHD8xuaD5dTjiRi5GKmS3QiQMGRCVMUYrHh2E7sqWVWqhrt3wjCL9W68ypMpXDKbz7UQMEIaRccuASawJbCXgwKFmE7PeEI~68rJazrnkUxz2KideHixdr~2N~niigOTebJGYDiNehOijPvbTq0ltf4nPuqJASwltiEK7A48wnehAPvDZqg244nArz6gE0Wvpqkxi~JoqxbRWL62qluVADdDbiBIISJnRdOabMdsXzhfSdcvC9cAdTmuz665QjxQxHhrT3Ux3Lt620lVnZ4AcigGz7XxDr0oCuL7-HA__&Key-Pair-Id=K3CSIJDLI589NB" 
+                src="/img/company-logo.png" 
                 alt="Kosi Simanchal Logo" 
                 style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
               />
