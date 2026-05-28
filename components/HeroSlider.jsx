@@ -7,14 +7,13 @@ export default function HeroSlider() {
   return (
     <div style={{ position: 'relative', backgroundColor: '#0f172a', minHeight: '85vh', display: 'flex', alignItems: 'center' }}>
       
-      {/* LAYER 1: The Image - Optimized for O(1) perceived load time */}
+      {/* LAYER 1: Pointing to the REAL file path and bypassing Vercel optimization for instant load */}
       <Image 
-        src="/hero.jpg" 
+        src="/img/banner/11.jpg" 
         alt="Kosi Simanchal Manufacturing & Construction" 
         fill
         priority 
-        quality={70} 
-        sizes="100vw"
+        unoptimized={true}
         style={{ objectFit: 'cover', zIndex: 0 }}
       />
       
