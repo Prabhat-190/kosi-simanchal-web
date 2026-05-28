@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 import NextLink from './NextLink';
 
 export default function Hero() {
@@ -10,41 +9,34 @@ export default function Hero() {
         {/* Animated Background Images - Optimized for Mobile & Laptop Parity */}
         <div className="carousel-inner">
           
-          {/* Slide 1: Replaced with your local banner image to fix the broken Vercel link */}
+          {/* Slide 1: BULLETPROOF FIX - Standard img tag and root path */}
           <div className="carousel-item active" style={{ position: 'relative', height: '100vh', minHeight: '600px' }}>
-            <Image 
-              src="/img/banner/11.jpg" 
+            <img 
+              src="/hero-bg.jpg" 
               alt="Civil Engineering" 
-              fill
-              priority
-              unoptimized={true} 
-              style={{ objectFit: 'cover' }}
+              style={{ width: '100%', height: '100%', objectFit: 'cover' }}
               className="animated-bg-img"
             />
             <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, backgroundColor: 'rgba(15, 23, 42, 0.6)' }}></div>
           </div>
 
-          {/* Slide 2: Modern Building */}
+          {/* Slide 2: Modern Building (Updated to standard img tag for consistency) */}
           <div className="carousel-item" style={{ position: 'relative', height: '100vh', minHeight: '600px' }}>
-            <Image 
+            <img 
               src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1600&q=80" 
               alt="Modern Building" 
-              fill
-              unoptimized={true}
-              style={{ objectFit: 'cover' }}
+              style={{ width: '100%', height: '100%', objectFit: 'cover' }}
               className="animated-bg-img"
             />
             <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, backgroundColor: 'rgba(15, 23, 42, 0.6)' }}></div>
           </div>
 
-          {/* Slide 3: Heavy Machinery */}
+          {/* Slide 3: Heavy Machinery (Updated to standard img tag for consistency) */}
           <div className="carousel-item" style={{ position: 'relative', height: '100vh', minHeight: '600px' }}>
-            <Image 
+            <img 
               src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?w=1600&q=80" 
               alt="Heavy Machinery" 
-              fill
-              unoptimized={true}
-              style={{ objectFit: 'cover' }}
+              style={{ width: '100%', height: '100%', objectFit: 'cover' }}
               className="animated-bg-img"
             />
             <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, backgroundColor: 'rgba(15, 23, 42, 0.6)' }}></div>
