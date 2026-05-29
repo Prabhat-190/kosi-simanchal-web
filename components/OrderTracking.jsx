@@ -1,6 +1,10 @@
 "use client"; 
 
 import React from 'react';
+import Image from 'next/image';
+
+// CACHE-BUSTER: Forcing Next.js to read the exact local file
+import warehouseImg from '../public/warehouse.jpg';
 
 export default function OrderTracking() {
   return (
@@ -44,19 +48,14 @@ export default function OrderTracking() {
           <div className="col-lg-5 offset-lg-1" data-cue="slideInRight">
              <div className="position-relative rounded-4 shadow-lg overflow-hidden" style={{ backgroundColor: '#1e293b', minHeight: '450px' }}>
                 
-                {/* 100% BULLETPROOF FIX: 
-                  Used CSS Background Image instead of HTML <img> tag. 
-                  Mobile Safari CANNOT show a blue question mark for a CSS background.
-                */}
-                <div 
-                  className="w-100 h-100 position-absolute top-0 start-0"
-                  style={{
-                    backgroundImage: "url('/warehouse.jpg')",
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                    opacity: 0.8
-                  }}
-                ></div>
+                {/* 100% BULLETPROOF FIX: Static Import Image */}
+                <Image 
+                  src={warehouseImg} 
+                  alt="Warehouse Logistics" 
+                  fill
+                  priority
+                  style={{ objectFit: 'cover', opacity: 0.8 }} 
+                />
                 
                 <div className="position-absolute bottom-0 start-0 w-100 p-4" style={{ background: 'linear-gradient(transparent, #0f172a)', zIndex: 2 }}>
                   <div className="d-flex align-items-center text-white">
