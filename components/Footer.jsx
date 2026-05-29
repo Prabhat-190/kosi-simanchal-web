@@ -29,7 +29,7 @@ export default function Footer() {
                   <i className="fas fa-envelope me-2 text-danger"></i> support@kosisimanchal.com
                 </p>
                 <p className="mb-2 text-light small">
-                  <i className="fas fa-phone me-2 text-danger"></i> +91 9523792670
+                  <i className="fas fa-phone me-2 text-danger"></i> +91 9234459897
                 </p>
               </div>
 
