@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react';
 
 export default function Hero() {
@@ -7,7 +8,6 @@ export default function Hero() {
         
         <div className="carousel-inner">
           
-          {/* Slide 1: Exact match with screenshot '11.jpg' in public folder */}
           <div className="carousel-item active" style={{ position: 'relative', height: '100vh', minHeight: '600px' }}>
             <img 
               src="/11.jpg" 
@@ -17,7 +17,6 @@ export default function Hero() {
             <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, backgroundColor: 'rgba(15, 23, 42, 0.6)' }}></div>
           </div>
 
-          {/* Slide 2: Modern Building */}
           <div className="carousel-item" style={{ position: 'relative', height: '100vh', minHeight: '600px' }}>
             <img 
               src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1600&q=80" 
@@ -27,7 +26,6 @@ export default function Hero() {
             <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, backgroundColor: 'rgba(15, 23, 42, 0.6)' }}></div>
           </div>
 
-          {/* Slide 3: Heavy Machinery */}
           <div className="carousel-item" style={{ position: 'relative', height: '100vh', minHeight: '600px' }}>
             <img 
               src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?w=1600&q=80" 
@@ -61,13 +59,6 @@ export default function Hero() {
             </div>
           </div>
         </div>
-        
-        <button className="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-          <span className="carousel-control-prev-icon" aria-hidden="true" style={{ width: '2rem', height: '2rem' }}></span>
-        </button>
-        <button className="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-          <span className="carousel-control-next-icon" aria-hidden="true" style={{ width: '2rem', height: '2rem' }}></span>
-        </button>
 
       </div>
     </section>

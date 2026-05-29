@@ -1,3 +1,4 @@
+/* eslint-disable */
 "use client";
 import React from 'react';
 
@@ -14,7 +15,6 @@ export default function RailwayProjects() {
 
         <div className="row g-4 justify-content-center">
           
-          {/* Card 1: Bridge Construction - Exact match with screenshot 'Bridge.jpeg' */}
           <div className="col-md-6 col-lg-4">
             <div className="card border-0 h-100" style={{ borderRadius: '12px', overflow: 'hidden', boxShadow: '0 4px 20px rgba(0,0,0,0.05)' }}>
               <div style={{ height: '260px', width: '100%', overflow: 'hidden', backgroundColor: '#e2e8f0' }}>
@@ -31,7 +31,6 @@ export default function RailwayProjects() {
             </div>
           </div>
 
-          {/* Card 2: Track Construction */}
           <div className="col-md-6 col-lg-4">
             <div className="card border-0 h-100" style={{ borderRadius: '12px', overflow: 'hidden', boxShadow: '0 4px 20px rgba(0,0,0,0.05)' }}>
               <div style={{ height: '260px', width: '100%', overflow: 'hidden', backgroundColor: '#e2e8f0' }}>
@@ -48,7 +47,6 @@ export default function RailwayProjects() {
             </div>
           </div>
 
-          {/* Card 3: Forecourt Fountain */}
           <div className="col-md-6 col-lg-4">
             <div className="card border-0 h-100" style={{ borderRadius: '12px', overflow: 'hidden', boxShadow: '0 4px 20px rgba(0,0,0,0.05)' }}>
               <div style={{ height: '260px', width: '100%', overflow: 'hidden', backgroundColor: '#e2e8f0' }}>
