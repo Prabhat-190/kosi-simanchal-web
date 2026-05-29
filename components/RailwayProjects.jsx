@@ -1,12 +1,10 @@
 "use client";
-
 import React from 'react';
 
 export default function RailwayProjects() {
   return (
     <section className="wrapper bg-light" id="railway-division" style={{ padding: '6rem 0' }}>
       <div className="container">
-        
         <div className="row text-center mb-10">
           <div className="col-lg-8 offset-lg-2">
             <h2 className="fs-16 text-uppercase mb-3" style={{ color: '#ffb300', fontWeight: '700', letterSpacing: '2px' }}>Railway Division</h2>
@@ -16,31 +14,14 @@ export default function RailwayProjects() {
 
         <div className="row g-4 justify-content-center">
           
-          {/* Card 1: Bridge Construction - Seedha 2.jpg jo img/projects me hai */}
+          {/* Card 1: Bridge Construction - Exact match with screenshot 'Bridge.jpeg' */}
           <div className="col-md-6 col-lg-4">
-            <div 
-              className="card border-0 h-100" 
-              style={{ 
-                borderRadius: '12px', 
-                overflow: 'hidden', 
-                boxShadow: '0 4px 20px rgba(0,0,0,0.05)',
-                transition: 'transform 0.3s ease, box-shadow 0.3s ease',
-                cursor: 'pointer'
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.transform = 'translateY(-5px)';
-                e.currentTarget.style.boxShadow = '0 10px 25px rgba(0,0,0,0.1)';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform = 'translateY(0)';
-                e.currentTarget.style.boxShadow = '0 4px 20px rgba(0,0,0,0.05)';
-              }}
-            >
-              <div style={{ height: '260px', width: '100%', overflow: 'hidden' }}>
+            <div className="card border-0 h-100" style={{ borderRadius: '12px', overflow: 'hidden', boxShadow: '0 4px 20px rgba(0,0,0,0.05)' }}>
+              <div style={{ height: '260px', width: '100%', overflow: 'hidden', backgroundColor: '#e2e8f0' }}>
                 <img 
-                  src="/img/projects/2.jpg" 
+                  src="/Bridge.jpeg" 
                   alt="Bridge Construction" 
-                  style={{ width: '100%', height: '100%', objectFit: 'cover', filter: 'contrast(1.05) saturate(1.1)' }} 
+                  style={{ width: '100%', height: '100%', objectFit: 'cover', filter: 'contrast(1.05) saturate(1.1)', opacity: 1, display: 'block', visibility: 'visible' }} 
                 />
               </div>
               <div className="card-body text-center p-4">
@@ -52,29 +33,12 @@ export default function RailwayProjects() {
 
           {/* Card 2: Track Construction */}
           <div className="col-md-6 col-lg-4">
-            <div 
-              className="card border-0 h-100" 
-              style={{ 
-                borderRadius: '12px', 
-                overflow: 'hidden', 
-                boxShadow: '0 4px 20px rgba(0,0,0,0.05)',
-                transition: 'transform 0.3s ease, box-shadow 0.3s ease',
-                cursor: 'pointer'
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.transform = 'translateY(-5px)';
-                e.currentTarget.style.boxShadow = '0 10px 25px rgba(0,0,0,0.1)';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform = 'translateY(0)';
-                e.currentTarget.style.boxShadow = '0 4px 20px rgba(0,0,0,0.05)';
-              }}
-            >
-              <div style={{ height: '260px', width: '100%', overflow: 'hidden' }}>
+            <div className="card border-0 h-100" style={{ borderRadius: '12px', overflow: 'hidden', boxShadow: '0 4px 20px rgba(0,0,0,0.05)' }}>
+              <div style={{ height: '260px', width: '100%', overflow: 'hidden', backgroundColor: '#e2e8f0' }}>
                 <img 
                   src="/img/projects/track.jpeg" 
                   alt="Track Construction" 
-                  style={{ width: '100%', height: '100%', objectFit: 'cover', filter: 'contrast(1.05) saturate(1.1)' }} 
+                  style={{ width: '100%', height: '100%', objectFit: 'cover', filter: 'contrast(1.05) saturate(1.1)', opacity: 1, display: 'block', visibility: 'visible' }} 
                 />
               </div>
               <div className="card-body text-center p-4">
@@ -86,29 +50,12 @@ export default function RailwayProjects() {
 
           {/* Card 3: Forecourt Fountain */}
           <div className="col-md-6 col-lg-4">
-            <div 
-              className="card border-0 h-100" 
-              style={{ 
-                borderRadius: '12px', 
-                overflow: 'hidden', 
-                boxShadow: '0 4px 20px rgba(0,0,0,0.05)',
-                transition: 'transform 0.3s ease, box-shadow 0.3s ease',
-                cursor: 'pointer'
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.transform = 'translateY(-5px)';
-                e.currentTarget.style.boxShadow = '0 10px 25px rgba(0,0,0,0.1)';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform = 'translateY(0)';
-                e.currentTarget.style.boxShadow = '0 4px 20px rgba(0,0,0,0.05)';
-              }}
-            >
-              <div style={{ height: '260px', width: '100%', overflow: 'hidden' }}>
+            <div className="card border-0 h-100" style={{ borderRadius: '12px', overflow: 'hidden', boxShadow: '0 4px 20px rgba(0,0,0,0.05)' }}>
+              <div style={{ height: '260px', width: '100%', overflow: 'hidden', backgroundColor: '#e2e8f0' }}>
                 <img 
                   src="/img/projects/fountain.jpeg" 
                   alt="Forecourt Fountain" 
-                  style={{ width: '100%', height: '100%', objectFit: 'cover', filter: 'contrast(1.05) saturate(1.1)' }} 
+                  style={{ width: '100%', height: '100%', objectFit: 'cover', filter: 'contrast(1.05) saturate(1.1)', opacity: 1, display: 'block', visibility: 'visible' }} 
                 />
               </div>
               <div className="card-body text-center p-4">
