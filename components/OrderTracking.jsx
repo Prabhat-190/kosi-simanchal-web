@@ -22,7 +22,6 @@ export default function OrderTracking() {
               Enter your Waybill, Consignment, or Order ID to get real-time GPS tracking of your heavy machinery, raw materials, or export containers.
             </p>
 
-           
             <div className="glass-card p-4 p-md-5 shadow-lg animate-float">
               <form className="search-form" onSubmit={(e) => e.preventDefault()}>
                 <div className="form-floating mb-4 position-relative">
@@ -43,15 +42,23 @@ export default function OrderTracking() {
           </div>
 
           <div className="col-lg-5 offset-lg-1" data-cue="slideInRight">
-             <div className="position-relative rounded-4 shadow-lg overflow-hidden">
-                {/* Auto-fetching a logistics warehouse image from Unsplash */}
-                <img 
-                  src="https://images.unsplash.com/photo-1586528116311-ad8ed7c80a30?w=800&q=80" 
-                  alt="Warehouse Logistics" 
-                  className="w-100" 
-                  style={{ height: '450px', objectFit: 'cover' }} 
-                />
-                <div className="position-absolute bottom-0 start-0 w-100 p-4" style={{ background: 'linear-gradient(transparent, #0f172a)' }}>
+             <div className="position-relative rounded-4 shadow-lg overflow-hidden" style={{ backgroundColor: '#1e293b', minHeight: '450px' }}>
+                
+                {/* 100% BULLETPROOF FIX: 
+                  Used CSS Background Image instead of HTML <img> tag. 
+                  Mobile Safari CANNOT show a blue question mark for a CSS background.
+                */}
+                <div 
+                  className="w-100 h-100 position-absolute top-0 start-0"
+                  style={{
+                    backgroundImage: "url('/warehouse.jpg')",
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    opacity: 0.8
+                  }}
+                ></div>
+                
+                <div className="position-absolute bottom-0 start-0 w-100 p-4" style={{ background: 'linear-gradient(transparent, #0f172a)', zIndex: 2 }}>
                   <div className="d-flex align-items-center text-white">
                     <i className="fas fa-shield-alt fa-2x text-warning me-3"></i>
                     <h6 className="mb-0 oswald tracking-wider">SECURE SUPPLY CHAIN ROUTING</h6>
