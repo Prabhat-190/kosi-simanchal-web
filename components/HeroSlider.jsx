@@ -11,8 +11,8 @@ export default function HeroSlider() {
         minHeight: '85vh', 
         display: 'flex', 
         alignItems: 'center',
-        /* 100% STABLE DIRECT FETCH: Bypasses Vercel's slow Next.js image processing */
-        backgroundImage: "url('/mainbg.jpg')",
+        /* YAHAN EXACTLY '/11.jpg' HONA CHAHIYE JO AAPKI FILE KA NAAM HAI */
+        backgroundImage: "url('/11.jpg')", 
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'

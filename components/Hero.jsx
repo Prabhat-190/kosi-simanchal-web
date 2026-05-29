@@ -1,66 +1,60 @@
 /* eslint-disable */
+"use client";
 import React from 'react';
+import Link from 'next/link';
 
-export default function Hero() {
+export default function HeroSlider() {
   return (
-    <section className="hero-slider" style={{ backgroundColor: '#0f172a' }}>
-      <div id="heroCarousel" className="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
-        
-        <div className="carousel-inner">
-          
-          <div className="carousel-item active" style={{ position: 'relative', height: '100vh', minHeight: '600px' }}>
-            <img 
-              src="/11.jpg" 
-              alt="Civil Engineering Excellence" 
-              style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 1, display: 'block', visibility: 'visible' }}
-            />
-            <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, backgroundColor: 'rgba(15, 23, 42, 0.6)' }}></div>
-          </div>
+    <div style={{ position: 'relative', backgroundColor: '#0f172a', minHeight: '85vh', display: 'flex', alignItems: 'center', overflow: 'hidden' }}>
+      
+      {/* LAYER 1: Exactly pointing to your screenshot file '11.jpg' */}
+      <img 
+        src="/11.jpg" 
+        alt="Kosi Simanchal Manufacturing & Construction" 
+        style={{ 
+          position: 'absolute', 
+          top: 0, 
+          left: 0, 
+          width: '100%', 
+          height: '100%', 
+          objectFit: 'cover', 
+          zIndex: 0,
+          display: 'block',
+          visibility: 'visible',
+          opacity: 1
+        }}
+      />
+      
+      {/* LAYER 2: The Dark Gradient Overlay */}
+      <div 
+        style={{ 
+          position: 'absolute', 
+          top: 0, left: 0, right: 0, bottom: 0, 
+          background: 'linear-gradient(rgba(15, 23, 42, 0.70), rgba(15, 23, 42, 0.85))', 
+          zIndex: 1 
+        }} 
+      />
 
-          <div className="carousel-item" style={{ position: 'relative', height: '100vh', minHeight: '600px' }}>
-            <img 
-              src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1600&q=80" 
-              alt="Modern Building" 
-              style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 1, display: 'block', visibility: 'visible' }}
-            />
-            <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, backgroundColor: 'rgba(15, 23, 42, 0.6)' }}></div>
-          </div>
-
-          <div className="carousel-item" style={{ position: 'relative', height: '100vh', minHeight: '600px' }}>
-            <img 
-              src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?w=1600&q=80" 
-              alt="Heavy Machinery" 
-              style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 1, display: 'block', visibility: 'visible' }}
-            />
-            <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, backgroundColor: 'rgba(15, 23, 42, 0.6)' }}></div>
-          </div>
-        </div>
-
-        <div className="carousel-caption w-100 text-center start-0 pb-0" style={{ bottom: '50%', transform: 'translateY(50%)' }}>
-          <div className="container">
-            <div className="row justify-content-center">
-              <div className="col-12 col-lg-10 px-3 px-md-0">
-                <h6 className="text-uppercase mb-3 mb-md-4 animate__animated animate__fadeInDown oswald fw-bold" style={{ letterSpacing: '4px', color: '#ffffff' }}>
-                  <span className="badge bg-dark border border-warning text-warning rounded-pill px-3 py-2 fs-6">
-                    <i className="fas fa-certificate me-2"></i>Class 3 Govt. Contractor
-                  </span>
-                </h6>
-                <h1 className="display-4 text-white mb-3 mb-md-4 animate__animated animate__zoomIn oswald fw-bold lh-sm" style={{ textShadow: '2px 4px 10px rgba(0,0,0,0.8)' }}>
-                  WE DON'T JUST BUILD HOMES,<br />WE BUILD <span className="text-gradient-gold" style={{ color: '#ffb300' }}>YOUR DREAMS</span>
-                </h1>
-                <p className="lead text-light mb-4 mb-md-5 animate__animated animate__fadeInUp roboto px-1 px-md-5" style={{ opacity: '0.9', fontWeight: '300' }}>
-                  Delivering premier turnkey infrastructure, civil engineering, and international trading solutions across India.
-                </p>
-                <div className="animate__animated animate__fadeInUp animate__delay-1s mt-3 d-flex flex-column flex-md-row justify-content-center align-items-center gap-3">
-                  <a href="#services" className="btn btn-lg fw-bold shadow-lg w-100 w-md-auto" style={{ backgroundColor: '#ffb300', color: '#0f172a' }}>Explore Projects</a>
-                  <a href="#export-import" className="btn btn-outline-light btn-lg fw-bold shadow-lg w-100 w-md-auto">Global Trade & IEC</a>
-                </div>
-              </div>
+      {/* LAYER 3: The Content */}
+      <div className="container text-center" style={{ position: 'relative', zIndex: 2, width: '100%' }}>
+        <div className="row justify-content-center">
+          <div className="col-lg-10">
+            <h6 className="text-uppercase mb-3 fw-bold" style={{ letterSpacing: '3px', color: '#ffb300' }}>
+              <i className="fas fa-hard-hat me-2"></i> Excellence in Engineering
+            </h6>
+            <h1 className="display-3 text-white fw-bold mb-4" style={{ textShadow: '2px 2px 5px rgba(0,0,0,0.6)' }}>
+              WE DON'T JUST BUILD HOMES,<br />WE BUILD <span style={{color: '#ffb300'}}>YOUR DREAMS</span>
+            </h1>
+            <p className="lead text-light mb-5 px-lg-5">
+              Delivering premier turnkey infrastructure, civil engineering, and international trading solutions across India.
+            </p>
+            <div className="d-flex justify-content-center gap-3">
+              <Link href="#projects" className="btn btn-lg fw-bold px-5" style={{ backgroundColor: '#ffb300', color: '#0f172a' }}>Explore Projects</Link>
+              <Link href="#contact" className="btn btn-outline-light btn-lg fw-bold px-5">Global Trade & IEC</Link>
             </div>
           </div>
         </div>
-
       </div>
-    </section>
+    </div>
   );
 }
