@@ -1,3 +1,4 @@
+"use client";
 import React from 'react';
 
 export default function PaymentContact() {
@@ -5,37 +6,81 @@ export default function PaymentContact() {
     <section className="py-5" id="payment">
       <div className="container py-5">
         <div className="row g-5">
-          
-          {/* Payment Section */}
-          <div className="card shadow-lg border-0" style={{ borderRadius: '15px' }}>
-  <div className="card-body p-4 p-md-5 bg-white">
-    
-    <div className="d-flex align-items-center mb-5 border-bottom pb-3">
-      <i className="fas fa-building fa-2x me-3" style={{ color: '#ffb300' }}></i>
-      <h4 className="oswald fw-bold mb-0 text-dark">Official Company Account</h4>
-    </div>
+       
+          {/* Trust Certificates Section (Replaces Payment) */}
+          <div className="col-lg-6">
+            <h6 className="fw-bold text-uppercase" style={{ color: '#ffb300' }}>Accreditations</h6>
+            <h2 className="fw-bold mb-4" style={{ color: '#0f172a' }}>Trust & Certifications</h2>
+            <p className="text-muted mb-4 pe-lg-4">
+              We are a recognized Class 3 construction entity committed to uncompromising quality, complete transparency, and international standards.
+            </p>
 
-    <ul className="list-unstyled roboto mb-0">
-      <li className="mb-4">
-        <span className="text-muted small d-block text-uppercase fw-bold" style={{ letterSpacing: '1px' }}>Account Name</span>
-        <strong className="fs-16 text-dark">KOSI SIMANCHAL MANUFACTURING AND CONSTRUCTION PVT LTD</strong>
-      </li>
-      <li className="mb-4">
-        <span className="text-muted small d-block text-uppercase fw-bold" style={{ letterSpacing: '1px' }}>Account Number</span>
-        <strong className="fs-22 oswald text-dark" style={{ letterSpacing: '2px' }}>20100036967114</strong>
-      </li>
-      <li className="mb-4">
-        <span className="text-muted small d-block text-uppercase fw-bold" style={{ letterSpacing: '1px' }}>IFSC Code</span>
-        <strong className="fs-22 oswald text-dark" style={{ letterSpacing: '2px' }}>BDBL0001098</strong>
-      </li>
-      <li>
-        <span className="text-muted small d-block text-uppercase fw-bold" style={{ letterSpacing: '1px' }}>Bank Name</span>
-        <strong className="fs-16 text-dark">Bandhan Bank</strong>
-      </li>
-    </ul>
+            <div className="row g-4">
+              {/* Certificate 1: ISO */}
+              <div className="col-6">
+                <div className="card border-0 shadow-sm h-100 rounded-3 overflow-hidden bg-light">
+                  <img 
+                    src="/img/projects/iso-certificate.jpg" 
+                    alt="ISO Certification" 
+                    className="w-100" 
+                    style={{ height: '140px', objectFit: 'cover' }} 
+                    onError={(e) => { e.target.style.display = 'none'; }} 
+                  />
+                  <div className="card-body p-3 text-center">
+                    <h6 className="mb-0 fw-bold oswald text-dark" style={{ fontSize: '14px' }}>ISO 9001:2015</h6>
+                  </div>
+                </div>
+              </div>
 
-  </div>
-</div>
+              {/* Certificate 2: MSME */}
+              <div className="col-6">
+                <div className="card border-0 shadow-sm h-100 rounded-3 overflow-hidden bg-light">
+                  <img 
+                    src="/img/projects/msme-certificate.jpg" 
+                    alt="MSME Registration" 
+                    className="w-100" 
+                    style={{ height: '140px', objectFit: 'cover' }} 
+                    onError={(e) => { e.target.style.display = 'none'; }} 
+                  />
+                  <div className="card-body p-3 text-center">
+                    <h6 className="mb-0 fw-bold oswald text-dark" style={{ fontSize: '14px' }}>MSME Registered</h6>
+                  </div>
+                </div>
+              </div>
+
+              {/* Certificate 3: PWD Class 3 */}
+              <div className="col-6">
+                <div className="card border-0 shadow-sm h-100 rounded-3 overflow-hidden bg-light">
+                  <img 
+                    src="/img/projects/pwd-license.jpg" 
+                    alt="PWD License" 
+                    className="w-100" 
+                    style={{ height: '140px', objectFit: 'cover' }} 
+                    onError={(e) => { e.target.style.display = 'none'; }} 
+                  />
+                  <div className="card-body p-3 text-center">
+                    <h6 className="mb-0 fw-bold oswald text-dark" style={{ fontSize: '14px' }}>Class 3 Contractor</h6>
+                  </div>
+                </div>
+              </div>
+
+              {/* Certificate 4: GST */}
+              <div className="col-6">
+                <div className="card border-0 shadow-sm h-100 rounded-3 overflow-hidden bg-light">
+                  <img 
+                    src="/img/projects/gst-certificate.jpg" 
+                    alt="GST Certificate" 
+                    className="w-100" 
+                    style={{ height: '140px', objectFit: 'cover' }} 
+                    onError={(e) => { e.target.style.display = 'none'; }} 
+                  />
+                  <div className="card-body p-3 text-center">
+                    <h6 className="mb-0 fw-bold oswald text-dark" style={{ fontSize: '14px' }}>GST Compliant</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
           {/* Contact Section */}
           <div className="col-lg-6" id="contact">
