@@ -7,7 +7,7 @@ export default function PaymentContact() {
       <div className="container py-5">
         <div className="row g-5">
        
-          {/* Trust Certificates Section */}
+          {/* Trust Certificates Section (Only 3 High-Quality Images) */}
           <div className="col-lg-7">
             <h6 className="fw-bold text-uppercase" style={{ color: '#ffb300' }}>Accreditations</h6>
             <h2 className="fw-bold mb-4" style={{ color: '#0f172a' }}>Trust & Certifications</h2>
@@ -15,117 +15,62 @@ export default function PaymentContact() {
               We operate with complete transparency and hold recognized certifications from premier government authorities, ensuring uncompromising quality and compliance.
             </p>
 
-            <div className="row g-3">
-              {/* 1. Incorporation */}
-              <div className="col-6 col-md-4">
-                <div className="card border-0 shadow-sm h-100 rounded-3 overflow-hidden bg-light">
-                  <div className="position-relative" style={{ height: '120px', backgroundColor: '#e2e8f0' }}>
-                    <img 
-                      src="/img/projects/incorporation-certificate.jpg" 
-                      alt="Certificate of Incorporation" 
-                      className="w-100 h-100" 
-                      style={{ objectFit: 'cover' }} 
-                      onError={(e) => { e.target.style.display = 'none'; }} 
-                    />
-                  </div>
-                  <div className="card-body p-2 text-center d-flex align-items-center justify-content-center">
-                    <h6 className="mb-0 fw-bold oswald text-dark" style={{ fontSize: '13px' }}>MCA Incorporated</h6>
-                  </div>
-                </div>
-              </div>
-
-              {/* 2. MCA Active */}
-              <div className="col-6 col-md-4">
-                <div className="card border-0 shadow-sm h-100 rounded-3 overflow-hidden bg-light">
-                  <div className="position-relative" style={{ height: '120px', backgroundColor: '#e2e8f0' }}>
-                    <img 
-                      src="/img/projects/mca-master-data.jpg" 
-                      alt="MCA Master Data" 
-                      className="w-100 h-100" 
-                      style={{ objectFit: 'cover' }} 
-                      onError={(e) => { e.target.style.display = 'none'; }} 
-                    />
-                  </div>
-                  <div className="card-body p-2 text-center d-flex align-items-center justify-content-center">
-                    <h6 className="mb-0 fw-bold oswald text-dark" style={{ fontSize: '13px' }}>Active MCA Status</h6>
-                  </div>
-                </div>
-              </div>
-
-              {/* 3. GST */}
-              <div className="col-6 col-md-4">
-                <div className="card border-0 shadow-sm h-100 rounded-3 overflow-hidden bg-light">
-                  <div className="position-relative" style={{ height: '120px', backgroundColor: '#e2e8f0' }}>
+            <div className="row g-4">
+              
+              {/* 1. GST Certificate */}
+              <div className="col-12 col-md-4">
+                <div className="card border-0 shadow-sm h-100 rounded-4 overflow-hidden bg-white border">
+                  <div className="position-relative p-2" style={{ height: '220px', backgroundColor: '#f8fafc' }}>
                     <img 
                       src="/img/projects/gst-certificate.jpg" 
                       alt="GST Registration" 
                       className="w-100 h-100" 
-                      style={{ objectFit: 'cover' }} 
-                      onError={(e) => { e.target.style.display = 'none'; }} 
+                      style={{ objectFit: 'contain' }} 
                     />
                   </div>
-                  <div className="card-body p-2 text-center">
-                    <h6 className="mb-0 fw-bold oswald text-dark" style={{ fontSize: '13px' }}>GST Registered</h6>
-                    <span className="d-block small text-muted" style={{ fontSize: '10px' }}>10AAJCK8645D1ZP</span>
+                  <div className="card-body p-3 text-center border-top">
+                    <h6 className="mb-0 fw-bold oswald text-dark" style={{ fontSize: '14px' }}>GST Registered</h6>
+                    <span className="d-block small text-muted mt-1" style={{ fontSize: '11px' }}>10AAJCK8645D1ZP</span>
                   </div>
                 </div>
               </div>
 
-              {/* 4. Startup India */}
-              <div className="col-6 col-md-4">
-                <div className="card border-0 shadow-sm h-100 rounded-3 overflow-hidden bg-light">
-                  <div className="position-relative" style={{ height: '120px', backgroundColor: '#e2e8f0' }}>
+              {/* 2. Startup India */}
+              <div className="col-12 col-md-4">
+                <div className="card border-0 shadow-sm h-100 rounded-4 overflow-hidden bg-white border">
+                  <div className="position-relative p-2" style={{ height: '220px', backgroundColor: '#f8fafc' }}>
                     <img 
                       src="/img/projects/startup-india-certificate.jpg" 
                       alt="Startup India" 
                       className="w-100 h-100" 
-                      style={{ objectFit: 'cover' }} 
-                      onError={(e) => { e.target.style.display = 'none'; }} 
+                      style={{ objectFit: 'contain' }} 
                     />
                   </div>
-                  <div className="card-body p-2 text-center">
-                    <h6 className="mb-0 fw-bold oswald text-dark" style={{ fontSize: '13px' }}>Startup India</h6>
-                    <span className="d-block small text-muted" style={{ fontSize: '10px' }}>DIPP188656</span>
+                  <div className="card-body p-3 text-center border-top">
+                    <h6 className="mb-0 fw-bold oswald text-dark" style={{ fontSize: '14px' }}>Startup India</h6>
+                    <span className="d-block small text-muted mt-1" style={{ fontSize: '11px' }}>DIPP188656</span>
                   </div>
                 </div>
               </div>
 
-              {/* 5. IEC / Trade */}
-              <div className="col-6 col-md-4">
-                <div className="card border-0 shadow-sm h-100 rounded-3 overflow-hidden bg-light">
-                  <div className="position-relative" style={{ height: '120px', backgroundColor: '#e2e8f0' }}>
+              {/* 3. IEC / Trade */}
+              <div className="col-12 col-md-4">
+                <div className="card border-0 shadow-sm h-100 rounded-4 overflow-hidden bg-white border">
+                  <div className="position-relative p-2" style={{ height: '220px', backgroundColor: '#f8fafc' }}>
                     <img 
                       src="/img/projects/iec-certificate.jpg" 
                       alt="Importer Exporter Code" 
                       className="w-100 h-100" 
-                      style={{ objectFit: 'cover' }} 
-                      onError={(e) => { e.target.style.display = 'none'; }} 
+                      style={{ objectFit: 'contain' }} 
                     />
                   </div>
-                  <div className="card-body p-2 text-center">
-                    <h6 className="mb-0 fw-bold oswald text-dark" style={{ fontSize: '13px' }}>DGFT IEC</h6>
-                    <span className="d-block small text-muted" style={{ fontSize: '10px' }}>AAJCK8645D</span>
+                  <div className="card-body p-3 text-center border-top">
+                    <h6 className="mb-0 fw-bold oswald text-dark" style={{ fontSize: '14px' }}>DGFT IEC</h6>
+                    <span className="d-block small text-muted mt-1" style={{ fontSize: '11px' }}>AAJCK8645D</span>
                   </div>
                 </div>
               </div>
 
-              {/* 6. PWD / Contractor */}
-              <div className="col-6 col-md-4">
-                <div className="card border-0 shadow-sm h-100 rounded-3 overflow-hidden bg-light">
-                  <div className="position-relative" style={{ height: '120px', backgroundColor: '#e2e8f0' }}>
-                    <img 
-                      src="/img/projects/pwd-license.jpg" 
-                      alt="PWD License" 
-                      className="w-100 h-100" 
-                      style={{ objectFit: 'cover' }} 
-                      onError={(e) => { e.target.style.display = 'none'; }} 
-                    />
-                  </div>
-                  <div className="card-body p-2 text-center d-flex align-items-center justify-content-center">
-                    <h6 className="mb-0 fw-bold oswald text-dark" style={{ fontSize: '13px' }}>Class 3 Contractor</h6>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
 
