@@ -1,9 +1,19 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './globals.css';
+import Script from 'next/script'; // 👈 Next.js ka official script optimizer
 
 export const metadata = {
-  title: 'Kosi Simanchal Construction Pvt. Ltd.',
-  description: 'Excellence in Civil Engineering & Construction in Bihar',
+  title: 'Kosi Simanchal Construction Pvt. Ltd. | Civil Engineering & Infrastructure',
+  description: 'Premier turnkey infrastructure, civil engineering, and international trading solutions across Bihar and India. Class 3 Government Contractor.',
+  keywords: 'Kosi Simanchal, Construction in Bihar, Civil Engineering, Class 3 Contractor, Government Contractor, Patna, Araria, Turnkey Infrastructure, Builders in Bihar',
+  openGraph: {
+    title: 'Kosi Simanchal Construction Pvt. Ltd.',
+    description: 'Excellence in Civil Engineering & Construction in Bihar.',
+    url: 'https://kosisimanchal.com', // Aapka naya domain yahan kaam aayega
+    siteName: 'Kosi Simanchal Construction',
+    locale: 'en_IN',
+    type: 'website',
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -21,8 +31,12 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         {children}
-        {/* Bootstrap Interactivity */}
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" async></script>
+        
+        {/* 100% Next.js Compatible Bootstrap Interactivity */}
+        <Script 
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
+          strategy="lazyOnload" 
+        />
       </body>
     </html>
   );
