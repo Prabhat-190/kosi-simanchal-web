@@ -97,7 +97,7 @@ export default function PaymentContact() {
 
               <div>
                 <h6 className="fw-bold"><i className="fas fa-phone-alt me-2" style={{ color: '#ffb300' }}></i> Phone Numbers</h6>
-                <p className="text-muted ms-4 mb-0 small">+91 9523792670, +91 9234459897<br/>+91 8789196019, +91 8368796711</p>
+                <p className="text-muted ms-4 mb-0 small">+91 9234459897<br/>+91 8789196019, +91 8368796711</p>
               </div>
             </div>
           </div>
