@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🏗️ Kosi Simanchal Construction Pvt. Ltd. 
 
-## Getting Started
+![Next.js](https://img.shields.io/badge/Next.js-black?style=for-the-badge&logo=next.js&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
-First, run the development server:
+A high-performance, fully responsive corporate web portal developed for **Kosi Simanchal Manufacturing and Construction Pvt. Ltd.** The platform serves as a digital storefront for premier turnkey infrastructure, civil engineering, and international trading solutions.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+🌐 **Live Demo:** [https://www.kosisimanchal.com](https://www.kosisimanchal.com)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🚀 Key Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+* **Server-Side Rendering (SSR) & Static Site Generation (SSG):** Built with Next.js for lightning-fast page loads and optimal performance.
+* **Premium UI/UX:** Responsive, mobile-first design implemented using Bootstrap 5, featuring modern corporate aesthetics.
+* **Advanced SEO Optimization:** Configured with dynamic metadata, OpenGraph tags, and targeted keywords to rank highly on search engines (Google Index ready).
+* **Secure Asset Delivery:** Image and asset optimization handled efficiently with Next.js native `next/image` and robust cache-busting configurations.
+* **Continuous Integration / Continuous Deployment (CI/CD):** Seamlessly integrated with GitHub and deployed via Vercel for zero-downtime automated updates.
+* **Custom Fonts & Iconography:** Integrated with Oswald & Roboto (Google Fonts) and FontAwesome for a crisp, professional typographic hierarchy.
 
-## Learn More
+## 💻 Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+* **Frontend Framework:** Next.js (React.js)
+* **Styling & Grid:** Bootstrap 5.3, Custom CSS
+* **Icons:** FontAwesome 6, Unicons
+* **Deployment & Hosting:** Vercel
+* **Domain Management:** GoDaddy (Custom DNS routing with SSL/HTTPS)
+* **Version Control:** Git & GitHub
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠️ Local Setup & Installation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+To run this project locally on your machine, follow these steps:
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/Prabhat-190/kosi-simanchal-web.git](https://github.com/Prabhat-190/kosi-simanchal-web.git)
